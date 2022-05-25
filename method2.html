@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="C:\Users\WILSON LEE\Downloads\275688238_3262561343978636_8057236356917574760_n.jpg" rel="shortcut icon"/>
+        <link rel='stylesheet' id='blocksy-dynamic-global-css'  href='https://sealblog.000webhostapp.com/wp-content/uploads/blocksy/css/global.css?ver=50541' media='all' />
+        <link rel="stylesheet" id="ct-main-styles-css" href="https://sealblog.000webhostapp.com/wp-content/themes/blocksy/static/bundle/main.min.css?ver=1.8.28" media="all">
+        <title>自主學習測試系統</title>
+         
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>JS Bin</title>
+        <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+        <script>
+          document.getElementById('loadingGif').style.display = "none";
+          var id = getRandom(10);
+        </script>
+        <script>
+            function showDiv() {
+                input();
+                document.getElementById('loadingGif').style.display = "block";
+                document.getElementById('table').style.display = "none";
+            /**setTimeout(function() {
+                document.getElementById('show1').style.display = "block";
+                document.getElementById('show2').style.display = "block";
+                document.getElementById('loadingGif').style.display = "none";
+                
+            },3000);**/
+            
+            }
+            function stopDiv(){
+                syncDelay(0000);
+                document.getElementById('loadingGif').style.display = "none";
+                document.getElementById('table').style.display = "block";
+            }
+        </script>
+    </head>
+    <div id="method1" name="method1">
+        <form method="post" autocomplete="off" name="form">
+            <center>
+                <form>
+                    第一條路線<br>
+                    起點站 : <select name="第一起點站">
+                        <optgroup label="BR 文湖線"></optgroup>
+                            <option value="BR01 動物園">BR01 動物園</option>
+                            <option value="BR02 木柵">BR02 木柵</option>
+                            <option value="BR03 萬芳社區">BR03 萬芳社區</option>
+                            <option value="BR04 萬芳醫院">BR04 萬芳醫院</option>
+                            <option value="BR05 辛亥">BR05 辛亥</option>
+                            <option value="BR06 麟光">BR06 麟光</option>
+                            <option value="BR07 六張犁">BR07 六張犁</option>
+                            <option value="BR08 科技大樓">BR08 科技大樓</option>
+                            <option value="BR09 大安">BR09 大安</option>
+                            <option value="BR10 忠孝復興">BR10 忠孝復興</option>
+                            <option value="BR11 南京復興">BR11 南京復興</option>
+                            <option value="BR12 中山國中">BR12 中山國中</option>
+                            <option value="BR13 松山機場">BR13 松山機場</option>
+                            <option value="BR14 大直">BR14 大直</option>
+                            <option value="BR15 劍南路">BR15 劍南路</option>
+                            <option value="BR16 西湖">BR16 西湖</option>
+                            <option value="BR17 港墘">BR17 港墘</option>
+                            <option value="BR18 文德">BR18 文德</option>
+                            <option value="BR19 內湖">BR19 內湖</option>
+                            <option value="BR20 大湖公園">BR20 大湖公園</option>
+                            <option value="BR21 葫洲">BR21 葫洲</option>
+                            <option value="BR22 東湖">BR22 東湖</option>
+                            <option value="BR23 南港軟體園區">BR23 南港軟體園區</option>
+                            <option value="BR24 南港展覽館">BR24 南港展覽館</option>
+                            <optgroup label="R 淡水信義線"></optgroup>
+                            <option value="R02 象山">R02 象山</option>
+                            <option value="R03 台北101/世貿">R03 台北101/世貿</option>
+                            <option value="R04 信義安和">R04 信義安和</option>
+                            <option value="R05 大安">R05 大安</option>
+                            <option value="R06 大安森林公園">R06 大安森林公園</option>
+                            <option value="R07 東門">R07 東門</option>
+                            <option value="R08 中正紀念堂">R08 中正紀念堂</option>
+                            <option value="R09 台大醫院">R09 台大醫院</option>
+                            <option value="R10 台北車站">R10 台北車站</option>
+                            <option value="R11 中山">R11 中山</option>
+                            <option value="R12 雙連">R12 雙連</option>
+                            <option value="R13 民權西路">R13 民權西路</option>
+                            <option value="R14 圓山">R14 圓山</option>
+                            <option value="R15 劍潭">R15 劍潭</option>
+                            <option value="R16 士林">R16 士林</option>
+                            <option value="R17 芝山">R17 芝山</option>
+                            <option value="R18 明德">R18 明德</option>
+                            <option value="R19 石牌">R19 石牌</option>
+                            <option value="R20 唭哩岸">R20 唭哩岸</option>
+                            <option value="R21 奇岩">R21 奇岩</option>
+                            <option value="R22 北投">R22 北投</option>
+                            <option value="R22A 新北投">R22A 新北投</option>
+                            <option value="R23 復興崗">R23 復興崗</option>
+                            <option value="R24 忠義">R24 忠義</option>
+                            <option value="R25 關渡">R25 關渡</option>
+                            <option value="R26 竹圍">R26 竹圍</option>
+                            <option value="R27 紅樹林">R27 紅樹林</option>
+                            <option value="R28 淡水">R28 淡水</option>
+                            <optgroup label="G 松山新店線"></optgroup>
+                            <option value="G01 新店">G01 新店</option>
+                            <option value="G02 新店區公所">G02 新店區公所</option>
+                            <option value="G03 七張">G03 七張</option>
+                            <option value="G03A 小碧潭">G03A 小碧潭</option>
+                            <option value="G04 大坪林">G04 大坪林</option>
+                            <option value="G05 景美">G05 景美</option>
+                            <option value="G06 萬隆">G06 萬隆</option>
+                            <option value="G07 公館">G07 公館</option>
+                            <option value="G08 台電大樓">G08 台電大樓</option>
+                            <option value="G09 古亭">G09 古亭</option>
+                            <option value="G10 中正紀念堂">G10 中正紀念堂</option>
+                            <option value="G11 小南門">G11 小南門</option>
+                            <option value="G12 西門">G12 西門</option>
+                            <option value="G13 北門">G13 北門</option>
+                            <option value="G14 中山">G14 中山</option>
+                            <option value="G15 松江南京">G15 松江南京</option>
+                            <option value="G16 南京復興">G16 南京復興</option>
+                            <option value="G17 台北小巨蛋">G17 台北小巨蛋</option>
+                            <option value="G18 南京三民">G18 南京三民</option>
+                            <option value="G19 松山">G19 松山</option>
+                            <optgroup label="O 中和新蘆線"></optgroup>
+                            <option value="O01 南勢角">O01 南勢角</option>
+                            <option value="O02 景安">O02 景安</option>
+                            <option value="O03 永安市場">O03 永安市場</option>
+                            <option value="O04 頂溪">O04 頂溪</option>
+                            <option value="O05 古亭">O05 古亭</option>
+                            <option value="O06 東門">O06 東門</option>
+                            <option value="O07 忠孝新生">O07 忠孝新生</option>
+                            <option value="O08 松江南京">O08 松江南京</option>
+                            <option value="O09 行天宮">O09 行天宮</option>
+                            <option value="O10 中山國小">O10 中山國小</option>
+                            <option value="O11 民權西路">O11 民權西路</option>
+                            <option value="O12 大橋頭">O12 大橋頭</option>
+                            <option value="O13 台北橋">O13 台北橋</option>
+                            <option value="O14 菜寮">O14 菜寮</option>
+                            <option value="O15 三重">O15 三重</option>
+                            <option value="O16 先嗇宮">O16 先嗇宮</option>
+                            <option value="O17 頭前庄">O17 頭前庄</option>
+                            <option value="O18 新莊">O18 新莊</option>
+                            <option value="O19 輔大">O19 輔大</option>
+                            <option value="O20 丹鳳">O20 丹鳳</option>
+                            <option value="O21 迴龍">O21 迴龍</option>
+                            <option value="O50 三重國小">O50 三重國小</option>
+                            <option value="O51 三和國中">O51 三和國中</option>
+                            <option value="O52 徐匯中學">O52 徐匯中學</option>
+                            <option value="O53 三民高中">O53 三民高中</option>
+                            <option value="O54 蘆洲">O54 蘆洲</option>
+                            <optgroup label="BL 板南線"></optgroup>
+                            <option value="BL01 頂埔">BL01 頂埔</option>
+                            <option value="BL02 永寧">BL02 永寧</option>
+                            <option value="BL03 土城">BL03 土城</option>
+                            <option value="BL04 海山">BL04 海山</option>
+                            <option value="BL05 亞東醫院">BL05 亞東醫院</option>
+                            <option value="BL06 府中">BL06 府中</option>
+                            <option value="BL07 板橋">BL07 板橋</option>
+                            <option value="BL08 新埔">BL08 新埔</option>
+                            <option value="BL09 江子翠">BL09 江子翠</option>
+                            <option value="BL10 龍山寺">BL10 龍山寺</option>
+                            <option value="BL11 西門">BL11 西門</option>
+                            <option value="BL12 台北車站">BL12 台北車站</option>
+                            <option value="BL13 善導寺">BL13 善導寺</option>
+                            <option value="BL14 忠孝新生">BL14 忠孝新生</option>
+                            <option value="BL15 忠孝復興">BL15 忠孝復興</option>
+                            <option value="BL16 忠孝敦化">BL16 忠孝敦化</option>
+                            <option value="BL17 國父紀念館">BL17 國父紀念館</option>
+                            <option value="BL18 市政府">BL18 市政府</option>
+                            <option value="BL19 永春">BL19 永春</option>
+                            <option value="BL20 後山埤">BL20 後山埤</option>
+                            <option value="BL21 昆陽">BL21 昆陽</option>
+                            <option value="BL22 南港">BL22 南港</option>
+                            <option value="BL23 南港展覽館">BL23 南港展覽館</option>
+                            <optgroup label="Y 環狀線"></optgroup>
+                            <option value="Y07 大坪林">Y07 大坪林</option>
+                            <option value="Y08 十四張">Y08 十四張</option>
+                            <option value="Y09 秀朗橋">Y09 秀朗橋</option>
+                            <option value="Y10 景平">Y10 景平</option>
+                            <option value="Y11 景安">Y11 景安</option>
+                            <option value="Y12 中和">Y12 中和</option>
+                            <option value="Y13 橋和">Y13 橋和</option>
+                            <option value="Y14 中原">Y14 中原</option>
+                            <option value="Y15 板新">Y15 板新</option>
+                            <option value="Y16 板橋">Y16 板橋</option>
+                            <option value="Y17 新埔民生">Y17 新埔民生</option>
+                            <option value="Y18 頭前庄">Y18 頭前庄</option>
+                            <option value="Y19 幸福">Y19 幸福</option>
+                            <option value="Y20 新北產業園區">Y20 新北產業園區</option>
+                    </select><br>
+                    終點站 : <select name="第一終點站">
+                            <optgroup label="BR 文湖線"></optgroup>
+                            <option value="BR01 動物園">BR01 動物園</option>
+                            <option value="BR02 木柵">BR02 木柵</option>
+                            <option value="BR03 萬芳社區">BR03 萬芳社區</option>
+                            <option value="BR04 萬芳醫院">BR04 萬芳醫院</option>
+                            <option value="BR05 辛亥">BR05 辛亥</option>
+                            <option value="BR06 麟光">BR06 麟光</option>
+                            <option value="BR07 六張犁">BR07 六張犁</option>
+                            <option value="BR08 科技大樓">BR08 科技大樓</option>
+                            <option value="BR09 大安">BR09 大安</option>
+                            <option value="BR10 忠孝復興">BR10 忠孝復興</option>
+                            <option value="BR11 南京復興">BR11 南京復興</option>
+                            <option value="BR12 中山國中">BR12 中山國中</option>
+                            <option value="BR13 松山機場">BR13 松山機場</option>
+                            <option value="BR14 大直">BR14 大直</option>
+                            <option value="BR15 劍南路">BR15 劍南路</option>
+                            <option value="BR16 西湖">BR16 西湖</option>
+                            <option value="BR17 港墘">BR17 港墘</option>
+                            <option value="BR18 文德">BR18 文德</option>
+                            <option value="BR19 內湖">BR19 內湖</option>
+                            <option value="BR20 大湖公園">BR20 大湖公園</option>
+                            <option value="BR21 葫洲">BR21 葫洲</option>
+                            <option value="BR22 東湖">BR22 東湖</option>
+                            <option value="BR23 南港軟體園區">BR23 南港軟體園區</option>
+                            <option value="BR24 南港展覽館">BR24 南港展覽館</option>
+                        <optgroup label="R 淡水信義線"></optgroup>
+                            <option value="R02 象山">R02 象山</option>
+                            <option value="R03 台北101/世貿">R03 台北101/世貿</option>
+                            <option value="R04 信義安和">R04 信義安和</option>
+                            <option value="R05 大安">R05 大安</option>
+                            <option value="R06 大安森林公園">R06 大安森林公園</option>
+                            <option value="R07 東門">R07 東門</option>
+                            <option value="R08 中正紀念堂">R08 中正紀念堂</option>
+                            <option value="R09 台大醫院">R09 台大醫院</option>
+                            <option value="R10 台北車站">R10 台北車站</option>
+                            <option value="R11 中山">R11 中山</option>
+                            <option value="R12 雙連">R12 雙連</option>
+                            <option value="R13 民權西路">R13 民權西路</option>
+                            <option value="R14 圓山">R14 圓山</option>
+                            <option value="R15 劍潭">R15 劍潭</option>
+                            <option value="R16 士林">R16 士林</option>
+                            <option value="R17 芝山">R17 芝山</option>
+                            <option value="R18 明德">R18 明德</option>
+                            <option value="R19 石牌">R19 石牌</option>
+                            <option value="R20 唭哩岸">R20 唭哩岸</option>
+                            <option value="R21 奇岩">R21 奇岩</option>
+                            <option value="R22 北投">R22 北投</option>
+                            <option value="R22A 新北投">R22A 新北投</option>
+                            <option value="R23 復興崗">R23 復興崗</option>
+                            <option value="R24 忠義">R24 忠義</option>
+                            <option value="R25 關渡">R25 關渡</option>
+                            <option value="R26 竹圍">R26 竹圍</option>
+                            <option value="R27 紅樹林">R27 紅樹林</option>
+                            <option value="R28 淡水">R28 淡水</option>
+                        <optgroup label="G 松山新店線"></optgroup>
+                            <option value="G01 新店">G01 新店</option>
+                            <option value="G02 新店區公所">G02 新店區公所</option>
+                            <option value="G03 七張">G03 七張</option>
+                            <option value="G03A 小碧潭">G03A 小碧潭</option>
+                            <option value="G04 大坪林">G04 大坪林</option>
+                            <option value="G05 景美">G05 景美</option>
+                            <option value="G06 萬隆">G06 萬隆</option>
+                            <option value="G07 公館">G07 公館</option>
+                            <option value="G08 台電大樓">G08 台電大樓</option>
+                            <option value="G09 古亭">G09 古亭</option>
+                            <option value="G10 中正紀念堂">G10 中正紀念堂</option>
+                            <option value="G11 小南門">G11 小南門</option>
+                            <option value="G12 西門">G12 西門</option>
+                            <option value="G13 北門">G13 北門</option>
+                            <option value="G14 中山">G14 中山</option>
+                            <option value="G15 松江南京">G15 松江南京</option>
+                            <option value="G16 南京復興">G16 南京復興</option>
+                            <option value="G17 台北小巨蛋">G17 台北小巨蛋</option>
+                            <option value="G18 南京三民">G18 南京三民</option>
+                            <option value="G19 松山">G19 松山</option>
+                        <optgroup label="O 中和新蘆線"></optgroup>
+                            <option value="O01 南勢角">O01 南勢角</option>
+                            <option value="O02 景安">O02 景安</option>
+                            <option value="O03 永安市場">O03 永安市場</option>
+                            <option value="O04 頂溪">O04 頂溪</option>
+                            <option value="O05 古亭">O05 古亭</option>
+                            <option value="O06 東門">O06 東門</option>
+                            <option value="O07 忠孝新生">O07 忠孝新生</option>
+                            <option value="O08 松江南京">O08 松江南京</option>
+                            <option value="O09 行天宮">O09 行天宮</option>
+                            <option value="O10 中山國小">O10 中山國小</option>
+                            <option value="O11 民權西路">O11 民權西路</option>
+                            <option value="O12 大橋頭">O12 大橋頭</option>
+                            <option value="O13 台北橋">O13 台北橋</option>
+                            <option value="O14 菜寮">O14 菜寮</option>
+                            <option value="O15 三重">O15 三重</option>
+                            <option value="O16 先嗇宮">O16 先嗇宮</option>
+                            <option value="O17 頭前庄">O17 頭前庄</option>
+                            <option value="O18 新莊">O18 新莊</option>
+                            <option value="O19 輔大">O19 輔大</option>
+                            <option value="O20 丹鳳">O20 丹鳳</option>
+                            <option value="O21 迴龍">O21 迴龍</option>
+                            <option value="O50 三重國小">O50 三重國小</option>
+                            <option value="O51 三和國中">O51 三和國中</option>
+                            <option value="O52 徐匯中學">O52 徐匯中學</option>
+                            <option value="O53 三民高中">O53 三民高中</option>
+                            <option value="O54 蘆洲">O54 蘆洲</option>
+                        <optgroup label="BL 板南線"></optgroup>
+                            <option value="BL01 頂埔">BL01 頂埔</option>
+                            <option value="BL02 永寧">BL02 永寧</option>
+                            <option value="BL03 土城">BL03 土城</option>
+                            <option value="BL04 海山">BL04 海山</option>
+                            <option value="BL05 亞東醫院">BL05 亞東醫院</option>
+                            <option value="BL06 府中">BL06 府中</option>
+                            <option value="BL07 板橋">BL07 板橋</option>
+                            <option value="BL08 新埔">BL08 新埔</option>
+                            <option value="BL09 江子翠">BL09 江子翠</option>
+                            <option value="BL10 龍山寺">BL10 龍山寺</option>
+                            <option value="BL11 西門">BL11 西門</option>
+                            <option value="BL12 台北車站">BL12 台北車站</option>
+                            <option value="BL13 善導寺">BL13 善導寺</option>
+                            <option value="BL14 忠孝新生">BL14 忠孝新生</option>
+                            <option value="BL15 忠孝復興">BL15 忠孝復興</option>
+                            <option value="BL16 忠孝敦化">BL16 忠孝敦化</option>
+                            <option value="BL17 國父紀念館">BL17 國父紀念館</option>
+                            <option value="BL18 市政府">BL18 市政府</option>
+                            <option value="BL19 永春">BL19 永春</option>
+                            <option value="BL20 後山埤">BL20 後山埤</option>
+                            <option value="BL21 昆陽">BL21 昆陽</option>
+                            <option value="BL22 南港">BL22 南港</option>
+                            <option value="BL23 南港展覽館">BL23 南港展覽館</option>
+                        <optgroup label="Y 環狀線"></optgroup>
+                            <option value="Y07 大坪林">Y07 大坪林</option>
+                            <option value="Y08 十四張">Y08 十四張</option>
+                            <option value="Y09 秀朗橋">Y09 秀朗橋</option>
+                            <option value="Y10 景平">Y10 景平</option>
+                            <option value="Y11 景安">Y11 景安</option>
+                            <option value="Y12 中和">Y12 中和</option>
+                            <option value="Y13 橋和">Y13 橋和</option>
+                            <option value="Y14 中原">Y14 中原</option>
+                            <option value="Y15 板新">Y15 板新</option>
+                            <option value="Y16 板橋">Y16 板橋</option>
+                            <option value="Y17 新埔民生">Y17 新埔民生</option>
+                            <option value="Y18 頭前庄">Y18 頭前庄</option>
+                            <option value="Y19 幸福">Y19 幸福</option>
+                            <option value="Y20 新北產業園區">Y20 新北產業園區</option>
+                    </select><br>
+                    每周搭乘次數 : <input type="number" name="第一每周搭乘次數" required="" /><br>(Ps.來回一趟算兩次)<br><br>
+                    第二條路線<br>
+                    起點站 : <select name="第二起點站">
+                        <optgroup label="BR 文湖線"></optgroup>
+                            <option value="BR01 動物園">BR01 動物園</option>
+                            <option value="BR02 木柵">BR02 木柵</option>
+                            <option value="BR03 萬芳社區">BR03 萬芳社區</option>
+                            <option value="BR04 萬芳醫院">BR04 萬芳醫院</option>
+                            <option value="BR05 辛亥">BR05 辛亥</option>
+                            <option value="BR06 麟光">BR06 麟光</option>
+                            <option value="BR07 六張犁">BR07 六張犁</option>
+                            <option value="BR08 科技大樓">BR08 科技大樓</option>
+                            <option value="BR09 大安">BR09 大安</option>
+                            <option value="BR10 忠孝復興">BR10 忠孝復興</option>
+                            <option value="BR11 南京復興">BR11 南京復興</option>
+                            <option value="BR12 中山國中">BR12 中山國中</option>
+                            <option value="BR13 松山機場">BR13 松山機場</option>
+                            <option value="BR14 大直">BR14 大直</option>
+                            <option value="BR15 劍南路">BR15 劍南路</option>
+                            <option value="BR16 西湖">BR16 西湖</option>
+                            <option value="BR17 港墘">BR17 港墘</option>
+                            <option value="BR18 文德">BR18 文德</option>
+                            <option value="BR19 內湖">BR19 內湖</option>
+                            <option value="BR20 大湖公園">BR20 大湖公園</option>
+                            <option value="BR21 葫洲">BR21 葫洲</option>
+                            <option value="BR22 東湖">BR22 東湖</option>
+                            <option value="BR23 南港軟體園區">BR23 南港軟體園區</option>
+                            <option value="BR24 南港展覽館">BR24 南港展覽館</option>
+                            <optgroup label="R 淡水信義線"></optgroup>
+                            <option value="R02 象山">R02 象山</option>
+                            <option value="R03 台北101/世貿">R03 台北101/世貿</option>
+                            <option value="R04 信義安和">R04 信義安和</option>
+                            <option value="R05 大安">R05 大安</option>
+                            <option value="R06 大安森林公園">R06 大安森林公園</option>
+                            <option value="R07 東門">R07 東門</option>
+                            <option value="R08 中正紀念堂">R08 中正紀念堂</option>
+                            <option value="R09 台大醫院">R09 台大醫院</option>
+                            <option value="R10 台北車站">R10 台北車站</option>
+                            <option value="R11 中山">R11 中山</option>
+                            <option value="R12 雙連">R12 雙連</option>
+                            <option value="R13 民權西路">R13 民權西路</option>
+                            <option value="R14 圓山">R14 圓山</option>
+                            <option value="R15 劍潭">R15 劍潭</option>
+                            <option value="R16 士林">R16 士林</option>
+                            <option value="R17 芝山">R17 芝山</option>
+                            <option value="R18 明德">R18 明德</option>
+                            <option value="R19 石牌">R19 石牌</option>
+                            <option value="R20 唭哩岸">R20 唭哩岸</option>
+                            <option value="R21 奇岩">R21 奇岩</option>
+                            <option value="R22 北投">R22 北投</option>
+                            <option value="R22A 新北投">R22A 新北投</option>
+                            <option value="R23 復興崗">R23 復興崗</option>
+                            <option value="R24 忠義">R24 忠義</option>
+                            <option value="R25 關渡">R25 關渡</option>
+                            <option value="R26 竹圍">R26 竹圍</option>
+                            <option value="R27 紅樹林">R27 紅樹林</option>
+                            <option value="R28 淡水">R28 淡水</option>
+                            <optgroup label="G 松山新店線"></optgroup>
+                            <option value="G01 新店">G01 新店</option>
+                            <option value="G02 新店區公所">G02 新店區公所</option>
+                            <option value="G03 七張">G03 七張</option>
+                            <option value="G03A 小碧潭">G03A 小碧潭</option>
+                            <option value="G04 大坪林">G04 大坪林</option>
+                            <option value="G05 景美">G05 景美</option>
+                            <option value="G06 萬隆">G06 萬隆</option>
+                            <option value="G07 公館">G07 公館</option>
+                            <option value="G08 台電大樓">G08 台電大樓</option>
+                            <option value="G09 古亭">G09 古亭</option>
+                            <option value="G10 中正紀念堂">G10 中正紀念堂</option>
+                            <option value="G11 小南門">G11 小南門</option>
+                            <option value="G12 西門">G12 西門</option>
+                            <option value="G13 北門">G13 北門</option>
+                            <option value="G14 中山">G14 中山</option>
+                            <option value="G15 松江南京">G15 松江南京</option>
+                            <option value="G16 南京復興">G16 南京復興</option>
+                            <option value="G17 台北小巨蛋">G17 台北小巨蛋</option>
+                            <option value="G18 南京三民">G18 南京三民</option>
+                            <option value="G19 松山">G19 松山</option>
+                            <optgroup label="O 中和新蘆線"></optgroup>
+                            <option value="O01 南勢角">O01 南勢角</option>
+                            <option value="O02 景安">O02 景安</option>
+                            <option value="O03 永安市場">O03 永安市場</option>
+                            <option value="O04 頂溪">O04 頂溪</option>
+                            <option value="O05 古亭">O05 古亭</option>
+                            <option value="O06 東門">O06 東門</option>
+                            <option value="O07 忠孝新生">O07 忠孝新生</option>
+                            <option value="O08 松江南京">O08 松江南京</option>
+                            <option value="O09 行天宮">O09 行天宮</option>
+                            <option value="O10 中山國小">O10 中山國小</option>
+                            <option value="O11 民權西路">O11 民權西路</option>
+                            <option value="O12 大橋頭">O12 大橋頭</option>
+                            <option value="O13 台北橋">O13 台北橋</option>
+                            <option value="O14 菜寮">O14 菜寮</option>
+                            <option value="O15 三重">O15 三重</option>
+                            <option value="O16 先嗇宮">O16 先嗇宮</option>
+                            <option value="O17 頭前庄">O17 頭前庄</option>
+                            <option value="O18 新莊">O18 新莊</option>
+                            <option value="O19 輔大">O19 輔大</option>
+                            <option value="O20 丹鳳">O20 丹鳳</option>
+                            <option value="O21 迴龍">O21 迴龍</option>
+                            <option value="O50 三重國小">O50 三重國小</option>
+                            <option value="O51 三和國中">O51 三和國中</option>
+                            <option value="O52 徐匯中學">O52 徐匯中學</option>
+                            <option value="O53 三民高中">O53 三民高中</option>
+                            <option value="O54 蘆洲">O54 蘆洲</option>
+                            <optgroup label="BL 板南線"></optgroup>
+                            <option value="BL01 頂埔">BL01 頂埔</option>
+                            <option value="BL02 永寧">BL02 永寧</option>
+                            <option value="BL03 土城">BL03 土城</option>
+                            <option value="BL04 海山">BL04 海山</option>
+                            <option value="BL05 亞東醫院">BL05 亞東醫院</option>
+                            <option value="BL06 府中">BL06 府中</option>
+                            <option value="BL07 板橋">BL07 板橋</option>
+                            <option value="BL08 新埔">BL08 新埔</option>
+                            <option value="BL09 江子翠">BL09 江子翠</option>
+                            <option value="BL10 龍山寺">BL10 龍山寺</option>
+                            <option value="BL11 西門">BL11 西門</option>
+                            <option value="BL12 台北車站">BL12 台北車站</option>
+                            <option value="BL13 善導寺">BL13 善導寺</option>
+                            <option value="BL14 忠孝新生">BL14 忠孝新生</option>
+                            <option value="BL15 忠孝復興">BL15 忠孝復興</option>
+                            <option value="BL16 忠孝敦化">BL16 忠孝敦化</option>
+                            <option value="BL17 國父紀念館">BL17 國父紀念館</option>
+                            <option value="BL18 市政府">BL18 市政府</option>
+                            <option value="BL19 永春">BL19 永春</option>
+                            <option value="BL20 後山埤">BL20 後山埤</option>
+                            <option value="BL21 昆陽">BL21 昆陽</option>
+                            <option value="BL22 南港">BL22 南港</option>
+                            <option value="BL23 南港展覽館">BL23 南港展覽館</option>
+                            <optgroup label="Y 環狀線"></optgroup>
+                            <option value="Y07 大坪林">Y07 大坪林</option>
+                            <option value="Y08 十四張">Y08 十四張</option>
+                            <option value="Y09 秀朗橋">Y09 秀朗橋</option>
+                            <option value="Y10 景平">Y10 景平</option>
+                            <option value="Y11 景安">Y11 景安</option>
+                            <option value="Y12 中和">Y12 中和</option>
+                            <option value="Y13 橋和">Y13 橋和</option>
+                            <option value="Y14 中原">Y14 中原</option>
+                            <option value="Y15 板新">Y15 板新</option>
+                            <option value="Y16 板橋">Y16 板橋</option>
+                            <option value="Y17 新埔民生">Y17 新埔民生</option>
+                            <option value="Y18 頭前庄">Y18 頭前庄</option>
+                            <option value="Y19 幸福">Y19 幸福</option>
+                            <option value="Y20 新北產業園區">Y20 新北產業園區</option>
+                    </select><br>
+                    終點站 : <select name="第二終點站">
+                            <optgroup label="BR 文湖線"></optgroup>
+                            <option value="BR01 動物園">BR01 動物園</option>
+                            <option value="BR02 木柵">BR02 木柵</option>
+                            <option value="BR03 萬芳社區">BR03 萬芳社區</option>
+                            <option value="BR04 萬芳醫院">BR04 萬芳醫院</option>
+                            <option value="BR05 辛亥">BR05 辛亥</option>
+                            <option value="BR06 麟光">BR06 麟光</option>
+                            <option value="BR07 六張犁">BR07 六張犁</option>
+                            <option value="BR08 科技大樓">BR08 科技大樓</option>
+                            <option value="BR09 大安">BR09 大安</option>
+                            <option value="BR10 忠孝復興">BR10 忠孝復興</option>
+                            <option value="BR11 南京復興">BR11 南京復興</option>
+                            <option value="BR12 中山國中">BR12 中山國中</option>
+                            <option value="BR13 松山機場">BR13 松山機場</option>
+                            <option value="BR14 大直">BR14 大直</option>
+                            <option value="BR15 劍南路">BR15 劍南路</option>
+                            <option value="BR16 西湖">BR16 西湖</option>
+                            <option value="BR17 港墘">BR17 港墘</option>
+                            <option value="BR18 文德">BR18 文德</option>
+                            <option value="BR19 內湖">BR19 內湖</option>
+                            <option value="BR20 大湖公園">BR20 大湖公園</option>
+                            <option value="BR21 葫洲">BR21 葫洲</option>
+                            <option value="BR22 東湖">BR22 東湖</option>
+                            <option value="BR23 南港軟體園區">BR23 南港軟體園區</option>
+                            <option value="BR24 南港展覽館">BR24 南港展覽館</option>
+                        <optgroup label="R 淡水信義線"></optgroup>
+                            <option value="R02 象山">R02 象山</option>
+                            <option value="R03 台北101/世貿">R03 台北101/世貿</option>
+                            <option value="R04 信義安和">R04 信義安和</option>
+                            <option value="R05 大安">R05 大安</option>
+                            <option value="R06 大安森林公園">R06 大安森林公園</option>
+                            <option value="R07 東門">R07 東門</option>
+                            <option value="R08 中正紀念堂">R08 中正紀念堂</option>
+                            <option value="R09 台大醫院">R09 台大醫院</option>
+                            <option value="R10 台北車站">R10 台北車站</option>
+                            <option value="R11 中山">R11 中山</option>
+                            <option value="R12 雙連">R12 雙連</option>
+                            <option value="R13 民權西路">R13 民權西路</option>
+                            <option value="R14 圓山">R14 圓山</option>
+                            <option value="R15 劍潭">R15 劍潭</option>
+                            <option value="R16 士林">R16 士林</option>
+                            <option value="R17 芝山">R17 芝山</option>
+                            <option value="R18 明德">R18 明德</option>
+                            <option value="R19 石牌">R19 石牌</option>
+                            <option value="R20 唭哩岸">R20 唭哩岸</option>
+                            <option value="R21 奇岩">R21 奇岩</option>
+                            <option value="R22 北投">R22 北投</option>
+                            <option value="R22A 新北投">R22A 新北投</option>
+                            <option value="R23 復興崗">R23 復興崗</option>
+                            <option value="R24 忠義">R24 忠義</option>
+                            <option value="R25 關渡">R25 關渡</option>
+                            <option value="R26 竹圍">R26 竹圍</option>
+                            <option value="R27 紅樹林">R27 紅樹林</option>
+                            <option value="R28 淡水">R28 淡水</option>
+                        <optgroup label="G 松山新店線"></optgroup>
+                            <option value="G01 新店">G01 新店</option>
+                            <option value="G02 新店區公所">G02 新店區公所</option>
+                            <option value="G03 七張">G03 七張</option>
+                            <option value="G03A 小碧潭">G03A 小碧潭</option>
+                            <option value="G04 大坪林">G04 大坪林</option>
+                            <option value="G05 景美">G05 景美</option>
+                            <option value="G06 萬隆">G06 萬隆</option>
+                            <option value="G07 公館">G07 公館</option>
+                            <option value="G08 台電大樓">G08 台電大樓</option>
+                            <option value="G09 古亭">G09 古亭</option>
+                            <option value="G10 中正紀念堂">G10 中正紀念堂</option>
+                            <option value="G11 小南門">G11 小南門</option>
+                            <option value="G12 西門">G12 西門</option>
+                            <option value="G13 北門">G13 北門</option>
+                            <option value="G14 中山">G14 中山</option>
+                            <option value="G15 松江南京">G15 松江南京</option>
+                            <option value="G16 南京復興">G16 南京復興</option>
+                            <option value="G17 台北小巨蛋">G17 台北小巨蛋</option>
+                            <option value="G18 南京三民">G18 南京三民</option>
+                            <option value="G19 松山">G19 松山</option>
+                        <optgroup label="O 中和新蘆線"></optgroup>
+                            <option value="O01 南勢角">O01 南勢角</option>
+                            <option value="O02 景安">O02 景安</option>
+                            <option value="O03 永安市場">O03 永安市場</option>
+                            <option value="O04 頂溪">O04 頂溪</option>
+                            <option value="O05 古亭">O05 古亭</option>
+                            <option value="O06 東門">O06 東門</option>
+                            <option value="O07 忠孝新生">O07 忠孝新生</option>
+                            <option value="O08 松江南京">O08 松江南京</option>
+                            <option value="O09 行天宮">O09 行天宮</option>
+                            <option value="O10 中山國小">O10 中山國小</option>
+                            <option value="O11 民權西路">O11 民權西路</option>
+                            <option value="O12 大橋頭">O12 大橋頭</option>
+                            <option value="O13 台北橋">O13 台北橋</option>
+                            <option value="O14 菜寮">O14 菜寮</option>
+                            <option value="O15 三重">O15 三重</option>
+                            <option value="O16 先嗇宮">O16 先嗇宮</option>
+                            <option value="O17 頭前庄">O17 頭前庄</option>
+                            <option value="O18 新莊">O18 新莊</option>
+                            <option value="O19 輔大">O19 輔大</option>
+                            <option value="O20 丹鳳">O20 丹鳳</option>
+                            <option value="O21 迴龍">O21 迴龍</option>
+                            <option value="O50 三重國小">O50 三重國小</option>
+                            <option value="O51 三和國中">O51 三和國中</option>
+                            <option value="O52 徐匯中學">O52 徐匯中學</option>
+                            <option value="O53 三民高中">O53 三民高中</option>
+                            <option value="O54 蘆洲">O54 蘆洲</option>
+                        <optgroup label="BL 板南線"></optgroup>
+                            <option value="BL01 頂埔">BL01 頂埔</option>
+                            <option value="BL02 永寧">BL02 永寧</option>
+                            <option value="BL03 土城">BL03 土城</option>
+                            <option value="BL04 海山">BL04 海山</option>
+                            <option value="BL05 亞東醫院">BL05 亞東醫院</option>
+                            <option value="BL06 府中">BL06 府中</option>
+                            <option value="BL07 板橋">BL07 板橋</option>
+                            <option value="BL08 新埔">BL08 新埔</option>
+                            <option value="BL09 江子翠">BL09 江子翠</option>
+                            <option value="BL10 龍山寺">BL10 龍山寺</option>
+                            <option value="BL11 西門">BL11 西門</option>
+                            <option value="BL12 台北車站">BL12 台北車站</option>
+                            <option value="BL13 善導寺">BL13 善導寺</option>
+                            <option value="BL14 忠孝新生">BL14 忠孝新生</option>
+                            <option value="BL15 忠孝復興">BL15 忠孝復興</option>
+                            <option value="BL16 忠孝敦化">BL16 忠孝敦化</option>
+                            <option value="BL17 國父紀念館">BL17 國父紀念館</option>
+                            <option value="BL18 市政府">BL18 市政府</option>
+                            <option value="BL19 永春">BL19 永春</option>
+                            <option value="BL20 後山埤">BL20 後山埤</option>
+                            <option value="BL21 昆陽">BL21 昆陽</option>
+                            <option value="BL22 南港">BL22 南港</option>
+                            <option value="BL23 南港展覽館">BL23 南港展覽館</option>
+                        <optgroup label="Y 環狀線"></optgroup>
+                            <option value="Y07 大坪林">Y07 大坪林</option>
+                            <option value="Y08 十四張">Y08 十四張</option>
+                            <option value="Y09 秀朗橋">Y09 秀朗橋</option>
+                            <option value="Y10 景平">Y10 景平</option>
+                            <option value="Y11 景安">Y11 景安</option>
+                            <option value="Y12 中和">Y12 中和</option>
+                            <option value="Y13 橋和">Y13 橋和</option>
+                            <option value="Y14 中原">Y14 中原</option>
+                            <option value="Y15 板新">Y15 板新</option>
+                            <option value="Y16 板橋">Y16 板橋</option>
+                            <option value="Y17 新埔民生">Y17 新埔民生</option>
+                            <option value="Y18 頭前庄">Y18 頭前庄</option>
+                            <option value="Y19 幸福">Y19 幸福</option>
+                            <option value="Y20 新北產業園區">Y20 新北產業園區</option>
+                    </select><br>
+                    每周搭乘次數 : <input type="number" name="第二每周搭乘次數" required="" /><br>(Ps.來回一趟算兩次)
+                    <input type="hidden" name="id" required=""  id="randomnumber" readonly="true"/><br><br>
+                </form>
+                <input type="submit" id="submit1" name="submit1" value="送出" onclick="this.style.visibility = 'hidden';showDiv()" style="background-color:#44c767;
+                    border-radius:4px;
+                    border:1px solid #18ab29;
+                    display:inline-block;
+                    cursor:pointer;
+                    color:#ffffff;
+                    font-family:Arial;
+                    font-size:23px;
+                    padding:8px 25px;
+                    text-decoration:none;" />
+                    <input type="reset" id="reset" value="重置" name="reset" onclick="history.go(0)" style="background-color:#e4685d;
+                    border-radius:4px;
+                    border:1px solid #ffffff;
+                    display:inline-block;
+                    cursor:pointer;
+                    color:#ffffff;
+                    font-family:Arial;
+                    font-size:20px;
+                    padding:5px 20px;
+                    text-decoration:none;">
+            </center>
+        </form>
+        <script type="text/javascript">/**資料傳出至{接收資料庫}**/
+            function input(){
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbz5RhMrYnFNKu5oLLktJbFQo8rH3vDPhVjNZVHR8oNAtt7iEwzogZ9hfQ9YRB4M3msP/exec'//接收資料庫網址
+                const form = document.forms['form']
+                form.addEventListener('submit', e => {/**傳送表單後提醒**/
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    //.then(response => alert("Your id is "+Number(document.getElementById('randomnumber').value)))
+                    //.then(response => showDiv())
+                    .then(response => search())
+                    .catch(error => console.error('Error!', error.message))
+            });}
+        </script>
+        <script>
+            function reset(){
+                document.getElementById('submit').visibility = "hidden";
+                document.getElementById('reset').visibility = "hidden";
+            }
+        </script>
+        <script>/**等待時間**/
+            function syncDelay(milliseconds){
+                var start = new Date().getTime();
+                var end=0;
+                while( (end-start) < milliseconds){
+                    end = new Date().getTime();
+                };
+            }
+        </script>
+        <script>/**隨機編號**/
+            function getRandom(x){
+                return Math.floor(Math.random()*x)+1
+            };
+        </script>
+        <script>
+            function randomNumber(len) {
+                var randomNumber;
+                var n = '';
+                for (var count = 0; count < len; count++) {
+                    randomNumber = Math.floor(Math.random() * 10);
+                    n += randomNumber.toString();
+                }
+                return n;
+            }
+            document.getElementById("randomnumber").value = getRandom(9999);
+            var idnumber = document.getElementById("randomnumber").value;
+        </script>
+        <script>
+            function search(){
+                syncDelay(2000);
+                $(function(){
+                    var a = {
+                        sheetUrl1 : 'https://docs.google.com/spreadsheets/d/1eTkxs7nBPnZKnXmI_HK8Bzi4Jzv9Rd83XIRI-jpFAl8/edit#gid=0',
+                        sheetTag1 : '純資料',
+                        sheetUrl2 : 'https://docs.google.com/spreadsheets/d/1eTkxs7nBPnZKnXmI_HK8Bzi4Jzv9Rd83XIRI-jpFAl8/edit#gid=1917248289',
+                        sheetTag2 : '計算結果',
+                        col: 21,
+                        endCol: 25,
+                        userid: Number(document.getElementById('randomnumber').value)
+                    };
+                    $.get('https://script.google.com/macros/s/AKfycbzBFJ1BEhUfkemDYF2aoCE2ThjkTgzDG3jl2T2_Gl--3d3YVEcy3M0k9gqku_8Sr2ofsw/exec',a, function(data){
+                    var data1 = data.split(',');  /**把傳出來的字串分割成陣列**/
+                    document.getElementById("v1").textContent = data1.splice(0,1);
+                    document.getElementById("v2").textContent = data1.splice(0,1);
+                    document.getElementById("v3").textContent = data1.splice(0,1);
+                    document.getElementById("v4").textContent = data1.splice(0,1);
+                    document.getElementById("v5").textContent = data1.splice(0,1);
+                    });
+                });
+                $(function(){
+                    var a = {
+                        sheetUrl1 : 'https://docs.google.com/spreadsheets/d/1eTkxs7nBPnZKnXmI_HK8Bzi4Jzv9Rd83XIRI-jpFAl8/edit#gid=0',
+                        sheetTag1 : '純資料',
+                        sheetUrl2 : 'https://docs.google.com/spreadsheets/d/1eTkxs7nBPnZKnXmI_HK8Bzi4Jzv9Rd83XIRI-jpFAl8/edit#gid=1917248289',
+                        sheetTag2 : '計算結果',
+                        col: 26,
+                        endCol: 30,
+                        userid: Number(document.getElementById('randomnumber').value)
+                    };
+                    $.get('https://script.google.com/macros/s/AKfycbzBFJ1BEhUfkemDYF2aoCE2ThjkTgzDG3jl2T2_Gl--3d3YVEcy3M0k9gqku_8Sr2ofsw/exec',a, function(data){
+                    var data2 = data.split(',');  /**把傳出來的字串分割成陣列**/
+                    document.getElementById("v6").textContent = data2.splice(0,1);
+                    document.getElementById("v7").textContent = data2.splice(0,1);
+                    document.getElementById("v8").textContent = data2.splice(0,1);
+                    document.getElementById("v9").textContent = data2.splice(0,1);
+                    document.getElementById("v10").textContent = data2.splice(0,1);
+                    });
+                });
+                $(function(){
+                    var a = {
+                        sheetUrl1 : 'https://docs.google.com/spreadsheets/d/1eTkxs7nBPnZKnXmI_HK8Bzi4Jzv9Rd83XIRI-jpFAl8/edit#gid=0',
+                        sheetTag1 : '純資料',
+                        sheetUrl2 : 'https://docs.google.com/spreadsheets/d/1eTkxs7nBPnZKnXmI_HK8Bzi4Jzv9Rd83XIRI-jpFAl8/edit#gid=1917248289',
+                        sheetTag2 : '計算結果',
+                        col: 31,
+                        endCol: 33,
+                        userid: Number(document.getElementById('randomnumber').value)
+                    };
+                    $.get('https://script.google.com/macros/s/AKfycbzBFJ1BEhUfkemDYF2aoCE2ThjkTgzDG3jl2T2_Gl--3d3YVEcy3M0k9gqku_8Sr2ofsw/exec',a, function(data){
+                    var data3 = data.split(',');
+                    document.getElementById("v11").textContent = data3.splice(0,1);
+                    document.getElementById("v12").textContent = data3.splice(0,1);
+                    document.getElementById("v13").textContent = data3.splice(0,1);
+                    syncDelay(0000);
+                    stopDiv();
+                    });
+                });
+            };
+        </script>
+        <center><br>
+            <h5>結果：</h5>
+            <div id="loadingGif" style="display:none"><img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif"></div>
+        </center>
+        <center>
+            <style type="text/css">
+                @import url('https://fonts.googleapis.com/earlyaccess/notosanstc.css');
+                .tg  {border-collapse:collapse;border-spacing:0; border-color: #ffffff;border-width: 3px;}
+                .tg td{border-color:black;border-style:solid;border-width:1px;font-family:'Noto Sans TC',"sans-serif";font-size:14px;
+                  overflow:hidden;padding:10px 5px;word-break:normal;}
+                .tg th{border-color:black;border-style:solid;border-width:1px;font-family:'Noto Sans TC',"sans-serif";font-size:14px;
+                  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+                .tg .tg-i42t{background-color:#ffffff;border-color:#000000;font-family:'Noto Sans TC',"sans-serif" !important;font-size:18px;
+                  text-align:center;vertical-align:top}
+                .tg .tg-s3uq{background-color:#ffffff;border-color:#000000;font-family:'Noto Sans TC',"sans-serif" !important;font-size:15px;
+                  text-align:center;vertical-align:top}
+                .tg .tg-epsd{background-color:#FFF;color:#FE0000;border-color:#000000;font-family:'Noto Sans TC',"sans-serif" !important;font-size:16px;
+                  text-align:center;vertical-align:top}
+                .tg .tg-euq5{background-color:#FFF;color:#3166FF;border-color:#000000;font-family:'Noto Sans TC',"sans-serif" !important;font-size:15px;
+                  text-align:center;vertical-align:top}
+                .tg .tg-q250{background-color:#FFF;border-color:#000000;color:#FE0000;font-family:'Noto Sans TC',"sans-serif" !important;
+                  font-size:16px;text-align:center;vertical-align:top}
+                .tg .tg-mkdf{background-color:#ffffff;border-color:#000000;font-family:'Noto Sans TC',"sans-serif" !important;font-size:16px;
+                  text-align:center;vertical-align:top}
+                .tg .tg-f9ge{background-color:#ffffff;border-color:#000000;font-family:'Noto Sans TC',"sans-serif" !important;font-size:15px;
+                  text-align:center;vertical-align:top}
+                .tg .tg-cram{background-color:#FFF;border-color:#000000;font-family:'Noto Sans TC',"sans-serif" !important;font-size:15px;
+                  text-align:center;vertical-align:top}
+                .tg .tg-iss1{background-color:#FFF;border-color:#000000;font-family:'Noto Sans TC',"sans-serif" !important;font-size:15px;text-align:center;
+                  vertical-align:top}
+                .tg .tg-a4al{background-color:#ffffff;border-color:#000000;font-family:'Noto Sans TC',"sans-serif" !important;font-size:16px;
+                  text-align:center;vertical-align:top}
+                .tg .tg-xbo8{border-color:inherit;border-color:#000000;font-family:'Noto Sans TC',"sans-serif" !important;font-size:16px;text-align:center;
+                  vertical-align:top}
+                .tg .tg-k3i0{background-color:#ffffff;border-color:#000000;color:#fe0000;font-family:'Noto Sans TC',"sans-serif" !important;
+                  font-size:18px;text-align:center;vertical-align:top}
+                .tg .tg-123{border-color:#ffffff;}
+                </style>
+                <table id="table" class="tg" style="table-layout: fixed; width: 600px;display:none">
+                <colgroup>
+                <col style="width: 200px">
+                <col style="width: 400px">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th class="tg-i42t" colspan="2">您總共輸入了<span style="color:#FE0000">2</span>條路線</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tg-q250" colspan="2"><span style="color:#000">第</span>1<span style="color:#000">條路線為：</span><span style="color:#3166FF" id="v1"></span><span style="color:#000"> ↔ </span><span style="color:#3166FF" id="v2"></span></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-f9ge">每周搭乘次數</td>
+                    <td class="tg-s3uq"><span style="color:#3166FF" id="v3"></span> 次</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-f9ge">單次搭乘價格</td>
+                    <td class="tg-cram"><span style="color:#3166FF" id="v4"></span> 元</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-f9ge">單次搭乘時間</td>
+                    <td class="tg-cram"><span style="color:#3166FF" id="v5"></span> 分鐘</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-epsd" colspan="2"><span style="color:#000">第</span>2<span style="color:#000">條路線為：</span><span style="color:#3166FF" id="v6"></span><span style="color:#000"> ↔ </span><span style="color:#3166FF" id="v7"></span></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-iss1">每周搭乘次數</td>
+                    <td class="tg-euq5"><span style="color:#3166FF" id="v8"></span> <span style="color:#000">次</span></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-iss1">單次搭乘價格</td>
+                    <td class="tg-euq5"><span style="color:#3166FF" id="v9"></span> <span style="color:#000">元</span></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-iss1">單次搭乘時間</td>
+                    <td class="tg-euq5"><span style="color:#3166FF" id="v10"></span> <span style="color:#000">分鐘</span></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-mkdf">普通票價格<br><span style="color:#FE0000">(含常客優惠)</span></td>
+                    <td class="tg-a4al"><span style="color:#3166FF" id="v11"></span> <span style="color:#000">元</span></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-xbo8">定期票價格</td>
+                    <td class="tg-xbo8"><span style="color:#3166FF">1280</span> 元</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-k3i0" colspan="2"><span style="font-weight:bold;color:#000">購買</span><span style="font-weight:bold" id="v12"></span><span style="font-weight:bold;color:#000">比較便宜，相差</span><span style="font-weight:bold" id="v13"></span><span style="font-weight:bold;color:#000">元</span><span style="font-size:10px ; text-align: left;color:#000"><br>(*此為四週(28天)計算結果)</span></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-123" colspan="2">
+                        <p id="copyright"  style="text-align:right;">https://cutt.ly/sealblog-mrt_fare_math ©Seal's Blog
+                            <img src="https://upload.cc/i1/2022/05/15/ga0sEN.png" width="70">
+                        </p>
+                    </td>
+                </tr>
+                </tbody>
+                </table>
+        </center>
+    </div>
+  </body>
+</html>
+<style>
+    .footer,.generic-footer{margin-bottom:98px}@media (min-width:374px){.footer,.generic-footer{margin-bottom:78px}}@media (min-width:546px){.footer,.generic-footer{margin-bottom:56px}}@media (min-width:1055px){.footer,.generic-footer{margin-bottom:0}}.disclaimer{position:fixed;z-index:9999999;bottom:static;right:0;display:none;border-top:2px solid #ff5c62;text-align:center;font-size:14px;font-weight:400;background-color:#fff;padding:5px 10px 5px 10px}.disclaimer a:hover{text-decoration:underline}@media (min-width:1052px){.disclaimer{text-align:right;border-left:2px solid red;border-top-left-radius:10px}}@media (min-width:1920px){.disclaimer{width:60%}}
+    </style>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="C:\Users\WILSON LEE\Downloads\275688238_3262561343978636_8057236356917574760_n.jpg" rel="shortcut icon"/>
+        <title>自主學習測試系統</title>
+         
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>JS Bin</title>
+        <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+        <script langauge="javascript">
+            function showmethod1(){
+                document.getElementById('method1').style.display="block";
+                document.getElementById('button1').style.backgroundColor="#d0451b";
+                document.getElementById('method2').style.display="none";
+                document.getElementById('button2').style.backgroundColor="#2dabf9";
+                document.getElementById('method3').style.display="none";
+                document.getElementById('button3').style.backgroundColor="#2dabf9";
+                document.getElementById('button4').style.backgroundColor="#2dabf9";  
+            }
+        
+            function showmethod2(){
+                document.getElementById('method1').style.display="none";
+                document.getElementById('button1').style.backgroundColor="#2dabf9";
+                document.getElementById('method2').style.display="block";
+                document.getElementById('button2').style.backgroundColor="#d0451b";
+                document.getElementById('method3').style.display="none";
+                document.getElementById('button3').style.backgroundColor="#2dabf9"; 
+                document.getElementById('button4').style.backgroundColor="#2dabf9";   
+            }
+            function showmethod3(){
+                document.getElementById('method1').style.display="none";
+                document.getElementById('button1').style.backgroundColor="#2dabf9";
+                document.getElementById('method2').style.display="none";
+                document.getElementById('button2').style.backgroundColor="#2dabf9";
+                document.getElementById('method3').style.display="block";
+                document.getElementById('button3').style.backgroundColor="#d0451b";
+                document.getElementById('button4').style.backgroundColor="#2dabf9";  
+            }
+            function closeall(){
+                document.getElementById('method1').style.display="none";
+                document.getElementById('button1').style.backgroundColor="#2dabf9";
+                document.getElementById('method2').style.display="none";
+                document.getElementById('button2').style.backgroundColor="#2dabf9";
+                document.getElementById('method3').style.display="none";
+                document.getElementById('button3').style.backgroundColor="#2dabf9";
+                document.getElementById('button4').style.backgroundColor="#d0451b";
+            }
+        </script>
+    </head>
+    <center>
+        <form>
+            <h4>請問共有幾種路程？<br>
+            <button type="button"  onclick="showmethod1()" id="button1" style="background-color:#2dabf9;
+            border-radius:3px;
+            border:1px solid #0b0e07;
+            display:inline-block;
+            cursor:pointer;
+            color:#ffffff;
+            font-family:Arial;
+            font-size:20px;
+            padding:10px 30px;
+            text-decoration:none;">1種</button>
+            <button type="button"  onclick="showmethod2()" id="button2" style="background-color:#2dabf9;
+            border-radius:3px;
+            border:1px solid #0b0e07;
+            display:inline-block;
+            cursor:pointer;
+            color:#ffffff;
+            font-family:Arial;
+            font-size:20px;
+            padding:10px 30px;
+            text-decoration:none;">2種</button>
+            <button type="button"  onclick="showmethod3()" id="button3" style="background-color:#2dabf9;
+            border-radius:3px;
+            border:1px solid #0b0e07;
+            display:inline-block;
+            cursor:pointer;
+            color:#ffffff;
+            font-family:Arial;
+            font-size:20px;
+            padding:10px 30px;
+            text-decoration:none;">3種</button>
+            <button type="button"  onclick="closeall()" id="button4" style="background-color:#2dabf9;
+            border-radius:3px;
+            border:1px solid #0b0e07;
+            display:inline-block;
+            cursor:pointer;
+            color:#ffffff;
+            font-family:Arial;
+            font-size:20px;
+            padding:10px 10px;
+            text-decoration:none;">關閉</button></h4>
+        </form>
+    </center>
+
+    <div id="method1" style="display: none">
+        <center>
+            <embed type="text/html" src="https://sealblog.000webhostapp.com/method/method1.html" style="min-height:120vh;width:100%" >
+        </center>
+    </div>
+
+    <div id="method2" style="display: none">
+        <center>
+            <embed type="text/html" src="https://sealblog.000webhostapp.com/method/method2.html" style="min-height:175vh;width:100%">
+        </center>
+    </div>
+    <div id="method3" style="display: none">
+        <center>
+            <embed type="text/html" src="https://sealblog.000webhostapp.com/method/method3.html" style="min-height:230vh;width:100%">
+        </center>
+    </div>
+  </body>
+</html>
