@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html style="margin: 0 auto;width: 100%;">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://upload.cc/i1/2022/05/29/9ftEne.png" rel="shortcut icon"/>
+        <title>捷運通勤票試算系統</title>
+         
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>JS Bin</title>
+        <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+        <script langauge="javascript">
+            function showmethod1(){
+                document.getElementById('method1').style.display="block";
+                document.getElementById('button1').style.backgroundColor="#d0451b";
+                document.getElementById('method2').style.display="none";
+                document.getElementById('button2').style.backgroundColor="#2dabf9";
+                document.getElementById('method3').style.display="none";
+                document.getElementById('button3').style.backgroundColor="#2dabf9";
+                document.getElementById('button4').style.backgroundColor="#2dabf9";  
+            }
+        
+            function showmethod2(){
+                document.getElementById('method1').style.display="none";
+                document.getElementById('button1').style.backgroundColor="#2dabf9";
+                document.getElementById('method2').style.display="block";
+                document.getElementById('button2').style.backgroundColor="#d0451b";
+                document.getElementById('method3').style.display="none";
+                document.getElementById('button3').style.backgroundColor="#2dabf9"; 
+                document.getElementById('button4').style.backgroundColor="#2dabf9";   
+            }
+            function showmethod3(){
+                document.getElementById('method1').style.display="none";
+                document.getElementById('button1').style.backgroundColor="#2dabf9";
+                document.getElementById('method2').style.display="none";
+                document.getElementById('button2').style.backgroundColor="#2dabf9";
+                document.getElementById('method3').style.display="block";
+                document.getElementById('button3').style.backgroundColor="#d0451b";
+                document.getElementById('button4').style.backgroundColor="#2dabf9";  
+            }
+            function closeall(){
+                document.getElementById('method1').style.display="none";
+                document.getElementById('button1').style.backgroundColor="#2dabf9";
+                document.getElementById('method2').style.display="none";
+                document.getElementById('button2').style.backgroundColor="#2dabf9";
+                document.getElementById('method3').style.display="none";
+                document.getElementById('button3').style.backgroundColor="#2dabf9";
+                document.getElementById('button4').style.backgroundColor="#d0451b";
+            }
+        </script>
+    </head>
+    <center>
+        <form>
+            <h4>請問共有幾種路程？<br>
+            <button type="button"  onclick="showmethod1()" id="button1" style="background-color:#2dabf9;
+            border-radius:3px;
+            border:1px solid #0b0e07;
+            display:inline-block;
+            cursor:pointer;
+            color:#ffffff;
+            font-family:Arial;
+            font-size:20px;
+            padding:2% 7%;
+            text-decoration:none;">1種</button>
+            <button type="button"  onclick="showmethod2()" id="button2" style="background-color:#2dabf9;
+            border-radius:3px;
+            border:1px solid #0b0e07;
+            display:inline-block;
+            cursor:pointer;
+            color:#ffffff;
+            font-family:Arial;
+            font-size:20px;
+            padding:2% 7%;
+            text-decoration:none;">2種</button>
+            <button type="button"  onclick="showmethod3()" id="button3" style="background-color:#2dabf9;
+            border-radius:3px;
+            border:1px solid #0b0e07;
+            display:inline-block;
+            cursor:pointer;
+            color:#ffffff;
+            font-family:Arial;
+            font-size:20px;
+            padding:2% 7%;
+            text-decoration:none;">3種</button>
+            <button type="button"  onclick="closeall();location.href='https://sites.google.com/view/sealblog/mrt_fare_math'" id="button4" style="background-color:#2dabf9;
+            border-radius:3px;
+            border:1px solid #0b0e07;
+            display:inline-block;
+            cursor:pointer;
+            color:#ffffff;
+            font-family:Arial;
+            font-size:20px;
+            padding:2% 3%;
+            text-decoration:none;">回網站</button></h4>
+        </form>
+    </center>
+<div style="margin: 0 auto;">
+    <div id="method1" style="display: none;margin: 0 auto;height: 850px;">
+            <embed type="text/html" src="https://sealblog.neocities.org/method1.html" style="margin: 0 auto;;height: 850px;width: 100%;" >
+    </div>
+
+    <div id="method2" style="display: none;margin: 0 auto;;height: 1300px;">
+            <embed type="text/html" src="https://sealblog.neocities.org/method2.html" style="margin: 0 auto;;height: 1300px;width: 100%">
+    </div>
+
+    <div id="method3" style="display: none;margin: 0 auto;;height: 1600px;">
+            <embed type="text/html" src="https://sealblog.neocities.org/method3.html" style="margin: 0 auto;;height: 1600px;width: 100%">
+    </div>
+</div>
+  </body>
+</html>
